@@ -87,5 +87,4 @@ if (computerScore > humanScore) {
     console.log("You won the overall Game. :)");
 } else {
     console.log("Draw.");
-
 }
