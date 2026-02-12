@@ -1,0 +1,61 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #BBCB64;
+}
+
+@font-face {
+    font-family: "InterExtraBold";
+    src: url(fonts/Inter-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: "Monograph";
+    src: url(fonts/monograph-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Rockline";
+    src: url(fonts/RoclinePersonalUseOnly-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roxaine";
+    src: url(fonts/RoxaineSerif_PERSONAL_USE_ONLY.otf);
+}
+
+.title {
+    padding-top: 1%;
+    color: #FFE52A;
+    font-size: 4rem;
+    font-family: "InterExtraBold";
+    text-align: center;
+    /* border: 1px dashed red;*/
+}
+
+.title-sidekick {
+    text-align: center;
+    color: #F79A19;
+    font-size: 3.5rem;
+    font-family: "InterExtraBold";
+    margin-top: -2.5rem;
+    margin-right: -20rem;
+    /* border: 1px dashed red; */
+}
+
+.game-play {
+    /* border: 1px dashed red; */
+    height: 35rem;
+    display: flex;
+}
+
+.game-button {
+    width: 60%;
+    border: 4px double #cf2626;
+}
+
+.results {
+    width: 40%;
+    border: 4px double #cf2626;
+}
