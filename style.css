@@ -3,6 +3,12 @@ body {
     margin: 0;
     box-sizing: border-box;
     background-color: #BBCB64;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: "PixelSans";
+    src: url(fonts/PixelifySans-VariableFont_wght.ttf);
 }
 
 @font-face {
@@ -34,26 +40,30 @@ body {
     color: #F79A19;
     font-size: 3.5rem;
     font-family: "InterExtraBold";
-    margin-top: -2.5rem;
-    margin-right: -20rem;
+    /* margin-top: -2.5rem;
+    margin-right: -20rem; */
+    position: relative;
+    top: -2.5rem;
+    right: -12rem;
     /* border: 1px dashed red; */
 }
 
 .game-play {
-    padding-top: 0.5%;
     /* border: 1px dashed red; */
     height: 35rem;
     display: flex;
 }
 
 .game-button {
+    flex-shrink: 0;
     width: 50%;
-    border: 4px double #cf2626;
+    border: 4px double #be5353;
+    text-align: center;
 }
 
-.results {
+.result {
     width: 50%;
-    border: 4px double #cf2626;
+    border: 4px double #c14848;
 }
 
 .footer {
@@ -62,4 +72,32 @@ body {
     font-weight: 500;
     text-align: center;
     color: yellow;
+}
+
+.rock-btn {
+    padding-top: 3.5rem;
+}
+
+.rock-btn button {
+    background-image: url(images/rock.jpg);
+    font-family: "PixelSans";
+    font-size: 2rem;
+}
+
+.paper-btn button {
+    background-image: url(images/page.jpg);
+    font-family: "PixelSans";
+    font-size: 2rem;
+    color: aliceblue;
+}
+
+.scissor-btn button {
+    background-image: url(images/scissor.jpg);
+    font-family: "PixelSans";
+    font-size: 2rem;
+}
+
+.btn button {
+    height: 150px;
+    width: 150px;
 }

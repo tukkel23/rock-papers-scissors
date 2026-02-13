@@ -11,11 +11,11 @@ scissor.addEventListener("click", () => playRound("Scissor"))
 
 let result = document.querySelector(".result")
 let roundResult = document.createElement("p")
-roundResult.style.color = "#FFE52A"
-roundResult.style.fontFamily = "InterBold"
+roundResult.style.color = "#105978ff"
+roundResult.style.fontFamily = "PixelSans"
 roundResult.style.fontSize = "1.5rem"
 roundResult.style.paddingLeft = "7px"
-roundResult.style.outline = "3px solid black"
+
 
 
 
