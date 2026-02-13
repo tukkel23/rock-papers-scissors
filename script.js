@@ -30,6 +30,24 @@ function getComputerChoice() {
     }
 }
 
+function winnerChecker() {
+    if (computerScore == 5 || humanScore == 5) {
+        let winner = document.createElement("p")
+        winner.style.color = "#105978ff"
+        winner.style.fontFamily = "PixelSans"
+        winner.style.fontSize = "1.5rem"
+        winner.style.paddingLeft = "7px"
+        winner.textContent = computerScore == 5 ?
+            `Computer has 5 score. You have ${humanScore}. Computer won` :
+            `You have 5 score. Computer has ${humanScore}. You won`;
+        result.appendChild(winner)
+        computerScore = 0;
+        humanScore = 0;
+
+
+    }
+}
+
 
 function playRound(humanChoice) {
     let computerChoice = getComputerChoice();
@@ -41,10 +59,12 @@ function playRound(humanChoice) {
             humanScore += 1;
             roundResult.textContent = `You chose ${humanChoice}. Computer chose ${computerChoice}. You win! Rock beats Scissors`;
             result.appendChild(roundResult)
+            winnerChecker()
         } else {
             computerScore += 1;
             roundResult.textContent = `You chose ${humanChoice}. Computer chose ${computerChoice}. You lost! Paper beats Rock`;
             result.appendChild(roundResult)
+            winnerChecker()
 
         }
     }
@@ -58,11 +78,13 @@ function playRound(humanChoice) {
             humanScore += 1;
             roundResult.textContent = `You chose ${humanChoice}. Computer chose ${computerChoice}. You win! Paper beats Rock`;
             result.appendChild(roundResult)
+            winnerChecker()
 
         } else {
             computerScore += 1;
             roundResult.textContent = `You chose ${humanChoice}. Computer chose ${computerChoice}. You lost! Scissor beats Paper`;
             result.appendChild(roundResult)
+            winnerChecker()
 
         }
     }
@@ -76,11 +98,13 @@ function playRound(humanChoice) {
             humanScore += 1;
             roundResult.textContent = `You chose ${humanChoice}. Computer chose ${computerChoice}. You win! Scissors beats Paper`;
             result.appendChild(roundResult)
+            winnerChecker()
 
         } else {
             computerScore += 1;
             roundResult.textContent = `You chose ${humanChoice}. Computer chose ${computerChoice}. You lost! Rock beats Scissors`;
             result.appendChild(roundResult)
+            winnerChecker()
 
         }
     }
