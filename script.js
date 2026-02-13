@@ -32,15 +32,15 @@ function getComputerChoice() {
 
 function winnerChecker() {
     if (computerScore == 5 || humanScore == 5) {
-        let winner = document.createElement("p")
-        winner.style.color = "#105978ff"
-        winner.style.fontFamily = "PixelSans"
-        winner.style.fontSize = "1.5rem"
-        winner.style.paddingLeft = "7px"
-        winner.textContent = computerScore == 5 ?
+        // let winner = document.createElement("p")
+        // winner.style.color = "#105978ff"
+        // winner.style.fontFamily = "PixelSans"
+        // winner.style.fontSize = "1.5rem"
+        // winner.style.paddingLeft = "7px"
+        roundResult.textContent = computerScore == 5 ?
             `Computer has 5 score. You have ${humanScore}. Computer won` :
             `You have 5 score. Computer has ${humanScore}. You won`;
-        result.appendChild(winner)
+        result.appendChild(roundResult)
         computerScore = 0;
         humanScore = 0;
 
